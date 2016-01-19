@@ -22,7 +22,6 @@ ul, ol { list-style: none; }
 
 /* 重置文本格式元素 */
 a { text-decoration: none; }
-a:hover { text-decoration: underline; }
 
 /* 重置表单元素 */
 legend { color: #000; } /* for ie6 */
@@ -48,27 +47,44 @@ hr {
 /************* Reset CSS *************/
 
 
-body{ font:14px/24px "microsoft yahei",arial,SimSun; color:#666; background:#fff;}
+body{ font:14px/24px "microsoft yahei",arial,SimSun; color:#666; background:#f4f4f4;}
 
-.sub-cont{ width:130px; height:100%; background:#2a2a2a; position:fixed; left:0; top:0; bottom:0; padding:50px 30px 0;}
-.sub-cont .profile{ width:130px; height:130px; margin-bottom:50px;}
+.sub-cont{ width:180px; height:100%; background:#2a2a2a; position:fixed; left:0; top:0; bottom:0; padding:50px 30px 0;}
+.sub-cont .profile{ width:130px; height:130px; margin:0 auto 20px;}
 .sub-cont .profile img{ display:block; width:100%; height:100%; border-radius:50%;}
+.sub-cont .sub-name{ margin-bottom:20px;}
+.sub-cont .sub-name h2{ height:60px; line-height:60px; text-align:center; font-size:18px; color:#C5C5C5;}
+.sub-cont .sub-name p{ line-height:22px; font-size:14px; color:#999; text-indent:2em;}
+.sub-cont .sub-nav{ margin-bottom:50px;}
 .sub-cont .sub-nav li{ height:30px; line-height:30px; text-align:center; color:#C5C5C5;}
 .sub-cont .sub-nav li a{ color:#C5C5C5;}
+.sub-cont .sub-link{ text-align:center;}
+.sub-cont .sub-link .ico{ display:inline-block; width:30px; height:30px; background-repeat:no-repeat; border-radius:50%; background-position:center center; opacity:0.7; transition:opacity 0.2s;  -webkit-transition:opacity 0.2s; -moz-transition:opacity 0.2s; -o-transition:opacity 0.2s; -ms-transition:opacity 0.2s; margin:0 5px; vertical-align:top;}
+.sub-cont .sub-link .ico:hover{ opacity:1;}
+.sub-cont .sub-link .ico.github{ background-image:url(../images/github.png); background-color:#afb6ca;}
+.sub-cont .sub-link .ico.mail{ background-image:url(../images/mail.png); background-color:#aaf;}
+.sub-cont .sub-link .ico.rss{ background-image:url(../images/rss.png); background-color:#ef7522;}
 
+.page-cont{ padding-left:250px;}
 
+.slider{ width:320px; height:100%; position:fixed; left:240px; top:0; bottom:0;}
+.slider li{ width:100%; height:100%; background-position:center center; background-size:cover; position:absolute; left:0; top:0;}
 
+.page-list{ margin-left:320px;}
+.page-list .list-item{ float:left; width:300px; padding:30px; position:relative;}
+.page-list .list-item .main{ font-size:12px; background:#fafafa; box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.06); border-radius:3px; position:relative;}
+.page-list .list-item img{ display:block; width:100%; margin-bottom:30px;}
+.page-list .list-item h2{ font-weight:normal; font-size:18px; padding:15px 0 30px;}
+.page-list .list-item h2 a{ color:#5ACDB3;}
+.page-list .list-item .brief p{ margin-bottom:20px;}
+.page-list .list-item .link{ display:block; width:100%; height:100%; position:absolute; left:0; top:0;}
+.page-list .list-item .link:before{ display:block; content:""; width:100%; height:100%; background:#fff; opacity:0; filter:(opacity=0); -webkit-transition:all 0.2s ease-in 0s; -moz-transition:all 0.2s ease-in 0s; -o-transition:all 0.2s ease-in 0s; transition:all 0.2s ease-in 0s;}
+.page-list .list-item .link .date{ width:100%; height:40px; line-height:40px; text-align:center; font-size:16px; color:#5ACDB3; text-shadow:0 1px 2px rgba(0,0,0,0.4); position:absolute; left:0; top:50%; margin-top:-10px; -webkit-transition:all 0.2s ease-in 0s; -moz-transition:all 0.2s ease-in 0s; -o-transition:all 0.2s ease-in 0s; transition:all 0.2s ease-in 0s;}
+.page-list .list-item:hover .link:before{ opacity:0.7; filter:(opacity=0.7);}
+.page-list .list-item:hover .date{ margin-top:-20px;}
 
-
-
-
-
-
-
-
-
-
-
+.page-list .list-item.text .main{ padding:20px;}
+.page-list .list-item.img .main img{ margin:0;}
 
 
 
