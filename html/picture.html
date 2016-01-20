@@ -31,7 +31,7 @@
     <div class="page-article">
         <div class="picture-cont">
             <img data-src="../images/picture-1-b.jpg" data-width="1680" data-height="1120" src="../images/picture-1-s.jpg" />
-            <img data-src="../images/picture-2-b.jpg" data-width="1680" data-height="1120" src="../images/picture-1-s.jpg" />
+            <img data-src="../images/picture-2-b.jpg" data-width="1680" data-height="1120" src="../images/picture-2-s.jpg" />
         </div>
         <div class="article-cont">
             <p>这张是前几天，周6，在回家路上拍的。</p>
@@ -59,12 +59,34 @@
     </ul>
 </div>
 <script type="text/javascript">
-//	$(".articleslider img").each(function(index, element) {
-//        var $img = $(this);
-//		var 
-//    });
+    var $picture = [];
+    var $window = {
+        width : $(window).width(),
+        height : $(window).height()
+    }
+    $(".picture-cont img").each(function(index, element){
+        var $img = $(this);
+        $picture.push({
+            width : parseInt($img.attr("data-width"), 10),
+            height : parseInt($img.attr("data-height"), 10),
+            src : $img.attr("data-src")
+        });
+    });
+    
+    function articleslider(index){
+        
+    }
+    
+    $(".picture-cont img").on("click", function(){
+        var $index = $(this).index();
+        articleslider($index);
+    });
+    
 	$(window).on("resize", function(){
-		
+		$window = {
+            width : $(window).width(),
+            height : $(window).height()
+        }
 	});
 </script>
 </body>
