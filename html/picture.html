@@ -5,6 +5,7 @@
 <title>相册页</title>
 <link rel="stylesheet" type="text/css" href="../css/blog.css"/>
 <script type="text/javascript" src="../js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="../js/alertslider.js"></script>
 </head>
 
 <body>
@@ -49,45 +50,8 @@
         </div>
     </div>
 </div>
-<div class="picture-slider">
-	<div class="mask"></div>
-	<span class="btn prev"></span>
-    <span class="btn next"></span>
-    <ul>
-    	<li><div class="item"><img src="../images/picture-1-b.jpg" alt=""><a target="_blank" href="../images/picture-1-b.jpg">查看原图（800x534）&gt;</a></div></li>
-    	<li><div class="item"><img src="../images/picture-2-b.jpg" alt=""><a target="_blank" href="../images/picture-2-b.jpg">查看原图（800x534）&gt;</a></div></li>
-    </ul>
-</div>
 <script type="text/javascript">
-    var $picture = [];
-    var $window = {
-        width : $(window).width(),
-        height : $(window).height()
-    }
-    $(".picture-cont img").each(function(index, element){
-        var $img = $(this);
-        $picture.push({
-            width : parseInt($img.attr("data-width"), 10),
-            height : parseInt($img.attr("data-height"), 10),
-            src : $img.attr("data-src")
-        });
-    });
-    
-    function articleslider(index){
-        
-    }
-    
-    $(".picture-cont img").on("click", function(){
-        var $index = $(this).index();
-        articleslider($index);
-    });
-    
-	$(window).on("resize", function(){
-		$window = {
-            width : $(window).width(),
-            height : $(window).height()
-        }
-	});
+	$alertSlider.init();
 </script>
 </body>
 </html>
