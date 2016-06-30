@@ -1,0 +1,70 @@
+// Related stories
+.related-stories {
+  margin-bottom: 30px;
+
+  @media (min-width: $screen-sm-min) {
+    margin-bottom: 60px;
+  }
+
+  h5 {
+    margin-top: -10px;
+    color: #9a9a90;
+    font-weight: normal;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: -30px;
+    }
+  }
+}
+
+// Custom CSS For Zemanta Related Post Plugin
+// ##########################################
+
+// .related_post_title {
+//   display: none;
+// }
+
+// .zem_rp_title {
+//   display: block;
+//   color: #2f343b;
+//   font-family: "Open Sans", sans-serif;
+//   border: none;
+//   font-size: 24px;
+//   font-weight: bold;
+// }
+
+// .zem_rp_title:hover {
+//   color: #9a9a90;
+// }
+
+// .wp_rp_excerpt {
+//   color: #9a9a90;
+//   font-size: 18px;
+//   font-family: "Open Sans", sans-serif;
+// }
+
+// .related_post {
+//   list-style: none;
+//   padding: 0;
+// }
+
+// .related_post li {
+//   padding-bottom: 30px;
+//   padding-top: 30px;
+//   border-bottom: 1px solid #dcdddd;
+// }
+
+// .related_post li:first-child {
+//     padding-top: 0;
+// }
+
+// .related_post li:last-child {
+//   border: none;
+// }
+
+// .zem_rp_edit {
+//   font-family: "Open Sans", sans-serif;
+// }
+
+// End of Custom CSS For Zemanta Related Post Plugin
+// #################################################
